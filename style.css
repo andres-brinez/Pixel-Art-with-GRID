@@ -18,7 +18,7 @@ h1{
     margin: 40px;
     display: grid;
     justify-content: center;
-    grid-template: repeat(16,55px) / repeat(13,54px);
+    grid-template: repeat(16,minMax(10px,55px)) / repeat(13,minMax(10px,54px));
     grid-template-areas:
     ".  bordeTop bordeTop bordeTop bordeTop bordeTop bordeTop bordeTop bordeTop bordeTop bordeTop bordeTop ."
     " borderRight background background background background background background background background background background background   borderLeft "
