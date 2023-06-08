@@ -13,12 +13,77 @@ body{
     width: 50%;
     margin: 100px auto;
     padding: 0 20px;
-    border: solid 1px red ;
     display: grid;
+    grid-template: repeat(16,55px) / repeat(13,54px);
     grid-template-areas:
+    ".  bordeTop bordeTop bordeTop bordeTop bordeTop bordeTop bordeTop bordeTop bordeTop bordeTop bordeTop ."
+    " borderRight background background background background background background background background background background background   borderLeft "
+    " borderRight background background background background background background background background background background background   borderLeft "
+    " borderRight background background background background background background background background background background background   borderLeft "
+    " borderRight background background background background background background background background background background background   borderLeft "
+    " borderRight background background background background background background background background background background background   borderLeft "
+    " borderRight background background background background background background background background background background background   borderLeft "
+    " borderRight background background background background background background background background background background background   borderLeft "
+    " borderRight background background background background background background background background background background background   borderLeft "
+    " borderRight background background background background background background background background background background background   borderLeft "
+    " borderRight background background background background background background background background background background background   borderLeft "
+    " borderRight background background background background background background background background background background background   borderLeft "
+    " borderRight background background background background background background background background background background background   borderLeft "
+    " borderRight background background background background background background background background background background background   borderLeft "
+    " . borderBottom borderBottom borderBottom borderBottom borderBottom borderBottom borderBottom borderBottom borderBottom borderBottom borderBottom  . ";
+}
+
+/* Borde */
+
+.container .bordeExteriorTop,
+.container .bordeExteriorLeft,
+.container .bordeExteriorBottom,
+.container .bordeExteriorRight{
+    background-color:#040C0E ;
+    
+}
+
+.container .bordeExteriorTop{
+    grid-area: bordeTop;
+}
+
+.container .bordeExteriorLeft{
+    grid-area: borderLeft;
+}
+
+.container  .bordeExteriorBottom{
+    grid-area: borderBottom;
+}
+.container .bordeExteriorRight{
+    grid-area: borderRight;
+
+}
+
+/* Background*/
+.container .background{
+    grid-area: background;
+    background-color: #71A598;
+}
 
 
-    "- " ;
+/* Botones */
+.container .boton1{
+    grid-row: 13/14;
+    grid-column: 9/10;
+    background-color: #FF0000;
+   
+}
+
+.container .boton2{
+    grid-row: 12/13;
+    grid-column: 8/9;
+    background-color: #00FFFF;
+}
+
+.container .boton3{
+    grid-row: 12/13;
+    grid-column: 10/11;
+    background-color: #00FF00;
 }
 
 
